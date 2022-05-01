@@ -14,7 +14,6 @@ const CategoryItem = ({category}) =>{
                 </div>
                 </div>
             </div>
-            ))
         </Fragment>
       );
 }
