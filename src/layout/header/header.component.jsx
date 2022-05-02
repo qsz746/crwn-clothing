@@ -1,10 +1,10 @@
-import { Outlet, Link } from 'react-router-dom';
+import { NavLink, Link} from 'react-router-dom';
 import React from 'react';
 import { Fragment } from 'react';
 import {ReactComponent as CrownLogo} from '../../assets/crown.svg';
-import styles from './navigation.module.css';
+import styles from './header.module.css';
 
-const Navgation=() =>{
+const Header=() =>{
     return (
         <Fragment>
             <div className={styles.navigation}>
@@ -12,14 +12,15 @@ const Navgation=() =>{
                    <CrownLogo className={styles.logo} />
                 </Link>
                 <div className={styles.navLinksContainer}>
-                    <Link className={styles.navLink} to='/shop'>SHOP</Link>
-                    <Link className={styles.navLink} to='/contact'>CONTACT</Link>
-                    <Link className={styles.navLink} to='/signin'>SIGN IN</Link>
+                    <nav>
+                        <NavLink className={styles.navLink} to='/shop'>SHOP</NavLink>
+                        <NavLink className={styles.navLink} to='/contact'>CONTACT</NavLink>
+                        <NavLink className={styles.navLink} to='/signin'>SIGN IN</NavLink>
+                    </nav>
                 </div>
             </div>
-            <Outlet/>
         </Fragment>
     )
   }
 
-  export default Navgation;
+  export default Header;

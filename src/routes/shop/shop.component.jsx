@@ -1,7 +1,12 @@
 import React from 'react';
+import Layout from '../../layout/layout.component';
 
 const Shop=() =>{
-    return <h1>dfdfas</h1>
-  }
+    return (
+        <Layout>
+            <h1>dfdfas</h1>
+        </Layout>
+    );
+  };
 
 export default Shop;  

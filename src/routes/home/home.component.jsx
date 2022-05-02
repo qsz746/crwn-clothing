@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Directory from '../../components/directory/directory.component';
+import Layout from '../../layout/layout.component';
 
 
 const Home = () => {
@@ -33,7 +34,9 @@ const Home = () => {
 
 return(
     <Fragment>
-        <Directory categories={categories}/>
+        <Layout>
+            <Directory categories={categories}/>
+        </Layout>
     </Fragment>
     );
 };
