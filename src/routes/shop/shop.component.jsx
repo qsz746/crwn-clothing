@@ -9,6 +9,7 @@ const Shop=() =>{
     const {products} = useContext(ProductsContext);
     return (
         <Layout>
+            {console.log('context is : ' + JSON.stringify(products))}
             <div className={styles.productsContainer}>
                 {products.map((product) =>(
                     <ProductCard product={product}/>
